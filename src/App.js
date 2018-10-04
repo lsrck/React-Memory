@@ -32,6 +32,7 @@ class App extends Component {
     const won = 1
     return (
       <div className="memory">
+        <GuessCount guesses={0}/>
         {this.cards.map((card,index) => (
           <Card 
           card={card}
